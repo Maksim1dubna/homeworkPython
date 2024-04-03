@@ -1,0 +1,9 @@
+D:\PycharmProjects\homeworkPython\.venv\Scripts\python.exe D:\PycharmProjects\homeworkPython\homeworks\Module1\homework15\homework15.py
+Traceback (most recent call last):
+  File "D:\PycharmProjects\homeworkPython\homeworks\Module1\homework15\homework15.py", line 7, in <module>
+    inner_function()
+    ^^^^^^^^^^^^^^
+NameError: name 'inner_function' is not defined. Did you mean: 'test_function'?
+Я в области видимости функции test_function
+
+Process finished with exit code 1
