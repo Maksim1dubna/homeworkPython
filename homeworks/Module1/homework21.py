@@ -9,5 +9,5 @@ class Nissan(Car, Vehicle):
     vehicle_type = 'Маслкар'
     def horse_powers(self, pw = 200):
         return pw
-car1 = Nissan();
+car1 = Nissan(); #1
 print(car1.vehicle_type, car1.price)
