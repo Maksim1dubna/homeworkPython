@@ -14,7 +14,7 @@ def read_file(filename): # добавить обработку FileNotFoundError
 def divide_numbers(a, b): # добавить обработку ZeroDivisionError, TypeError
     try:
         a / b
-    except ZeroDivisionError:
+    except a==0:
         return "ZeroDivisionError"
     except TypeError:
         return "TypeError"
@@ -28,5 +28,5 @@ def access_list_element(lst, index): # добавить обработку Index
 
 print(string_to_int("a"))
 print(read_file("file.txt"))
-print(divide_numbers(1,0))
+print(divide_numbers(0,1))
 print(access_list_element(1,0))
