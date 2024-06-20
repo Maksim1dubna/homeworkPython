@@ -14,7 +14,7 @@ class turn_onOff:
     def switch(self):
         print(self.sw["Включено"])
 def ntrospection_info(obj):
-    pprint.pprint(f"Type:{type(obj)}, methods and attributes:{[method for method in dir(obj) if method.startswith('__') is False]}, module:{inspect.getmodule(obj)}")
+    pprint.pprint(f"Type:{type(obj)}, methods:{dir(obj)}, attributes:{vars(obj)}, module:{inspect.getmodule(obj)}")
 
 obj1 = turn_onOff
 ntrospection_info(obj1)
