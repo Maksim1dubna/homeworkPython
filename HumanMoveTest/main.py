@@ -1,6 +1,6 @@
 class Student:
-    def __init__(self):
-        # self.name = name
+    def __init__(self, name):
+        self.name = name
         self.distance = 0
 
     def run(self):

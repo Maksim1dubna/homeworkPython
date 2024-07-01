@@ -2,20 +2,20 @@ import main
 import unittest
 class Testing(unittest.TestCase):
     def testwalk(self):
-        getwalk = main.Student()
+        getwalk = main.Student("WLK")
         a = 50
         for _ in range(0, 10):
             getwalk.walk()
         self.assertEqual(first=getwalk.distance, second=a, msg=str("Дистанции не равны [дистанция человека(объекта)] != {0}".format(a)))
     def testrun(self):
-        getrun = main.Student()
+        getrun = main.Student("RN")
         a = 100
         for _ in range(0, 10):
             getrun.run()
         self.assertEqual(first=getrun.distance, second=a, msg=str("Дистанции не равны [дистанция человека(объекта)] != {0}".format(a)))
     def testRunWalk(self):
-        getrun = main.Student()
-        getwalk = main.Student()
+        getrun = main.Student("WLK")
+        getwalk = main.Student("RN")
         for _ in range(0, 1):
             getrun.run()
         for _ in range(0, 10):
